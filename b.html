@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="YmrHNxxYxy5iz_PDB1UWlR8RkD56xp3mhqASdwy1HLo" />
+<!-- SEO TITLE -->
+<title>Free PDF Tools Online | Merge, Split, Compress PDF – Experts PHP</title>
+
+<!-- META DESCRIPTION -->
+<meta name="description" content="Use free online PDF tools to merge PDF, split PDF, compress PDF, convert PDF to Word and more. Fast, secure and easy PDF editor.">
+
+<!-- KEYWORDS (optional but ok) -->
+<meta name="keywords" content="merge pdf, split pdf, compress pdf, pdf tools online, free pdf editor">
+
+<!-- AUTHOR -->
+<meta name="author" content="Experts PHP">
+
+<!-- CANONICAL URL -->
+<link rel="canonical" href="https://amanovar.github.io/mrsal/" />
+
+<!-- OPEN GRAPH (Facebook / WhatsApp) -->
+<meta property="og:title" content="Free PDF Tools Online – Experts PHP">
+<meta property="og:description" content="Merge, split, compress and convert PDFs online for free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amanovar.github.io/mrsal/">
+<meta property="og:image" content="https://amanovar.github.io/mrsal/preview.png">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+  * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#f8fafc;color:#0f172a}
+
+/* HEADER */
+header{background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-size:22px;font-weight:700;color:#e11d48}
+.nav-links a{margin:0 10px;text-decoration:none;color:#334155;font-weight:600}
+.auth a{margin-left:10px;text-decoration:none;font-weight:600}
+.login{color:#334155}
+.signup{background:#e11d48;color:#fff;padding:8px 14px;border-radius:6px}
+
+/* HERO */
+.hero{max-width:1200px;margin:60px auto 40px;padding:0 20px;text-align:center}
+.hero h1{font-size:34px;margin-bottom:14px}
+.hero p{color:#475569;max-width:800px;margin:auto;font-size:17px}
+
+/* CATEGORY BAR */
+.categories{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:40px 0}
+.categories button{border:none;padding:10px 16px;border-radius:20px;background:#e2e8f0;cursor:pointer;font-weight:600}
+.categories button.active{background:#e11d48;color:#fff}
+
+/* TOOLS GRID *
+.tools{max-width:1200px;margin:auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.tool{background:#fff;border-radius:12px;padding:22px;box-shadow:0 8px 20px rgba(0,0,0,.08);transition:.3s}
+.tool:hover{transform:translateY(-5px)}
+.tool h3{margin-bottom:10px}
+.tool p{font-size:14px;color:#475569}*/
+.badge{background:#22c55e;color:#fff;font-size:12px;padding:3px 8px;border-radius:20px;margin-left:6px}
+
+/* SECTIONS */
+.section{max-width:1200px;margin:80px auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.section h2{font-size:28px;margin-bottom:10px}
+.section p{color:#475569}
+.section img{width:100%;border-radius:12px}
+
+/* PREMIUM */
+.premium{background:#0f172a;color:#fff;padding:60px 20px;text-align:center}
+.premium h2{font-size:30px}
+.premium p{max-width:700px;margin:15px auto;color:#cbd5f5}
+.premium a{display:inline-block;margin-top:20px;background:#e11d48;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700}
+
+/* FOOTER */
+footer{background:#020617;color:#cbd5e1;padding:40px 20px}
+.footer{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+footer h4{margin-bottom:10px;color:#fff}
+footer a{display:block;color:#cbd5e1;text-decoration:none;font-size:14px;margin:6px 0}
+.copy{text-align:center;margin-top:30px;font-size:14px;color:#94a3b8}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .section{grid-template-columns:1fr}
+}
+
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f8fafc}
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:14px 20px;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{font-size:22px;font-weight:700;color:#e11d48}
+
+/* HAMBURGER */
+.hamburger{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* DESKTOP MENU */
+.menu{display:flex;gap:18px}
+
+.menu-item{
+  position:relative;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.arrow{font-size:12px;transition:.3s}
+
+.sub{
+  position:absolute;
+  top:35px;
+  left:0;
+  background:#fff;
+  min-width:180px;
+  border-radius:8px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  display:none;
+}
+
+.sub a{
+  display:block;
+  padding:10px 14px;
+  text-decoration:none;
+  color:#0f172a;
+}
+
+.menu-item.active .sub{display:block}
+.menu-item.active .arrow{transform:rotate(180deg)}
+
+.auth a{margin-left:12px;text-decoration:none;font-weight:600}
+.btn{background:#e11d48;color:#fff;padding:8px 14px;border-radius:6px}
+
+/* SIDEBAR */
+.sidebar{
+  position:fixed;
+  top:0;left:-260px;
+  width:260px;height:100%;
+  background:#0f172a;
+  color:#fff;
+  transition:.3s;
+  z-index:1000;
+}
+
+.sidebar.show{left:0}
+
+.sidebar-header{
+  display:flex;
+  justify-content:space-between;
+  padding:14px;
+  font-weight:700;
+  background:#020617;
+}
+
+.side-item{
+  padding:14px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  cursor:pointer;
+}
+
+.side-item span{float:right}
+
+.side-sub{
+  display:none;
+  padding-left:10px;
+}
+
+.side-sub a{
+  display:block;
+  padding:8px 0;
+  color:#cbd5f5;
+  text-decoration:none;
+}
+
+/* OVERLAY */
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.4);
+  display:none;
+  z-index:999;
+}
+.overlay.show{display:block}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .desktop-menu{display:none}
+  .hamburger{display:block}
+}
+
+/* desktop menu visible only on laptop */
+@media(min-width:769px){
+  .desktop-menu{display:flex}
+}
+
+/* mobile only */
+@media(max-width:768px){
+  .desktop-menu{display:none}
+}
+
+
+/* TOP FIXED HORIZONTAL SCROLLBAR */
+.top-scrollbar{
+  position: sticky;
+  top: 60px; /* header ki height ke hisab se */
+  z-index: 99;
+  background: #020617;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 8px 0;
+}
+
+.top-scrollbar a{
+  display: inline-block;
+  color: #e5e7eb;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-scrollbar a:hover{
+  background: #1e293b;
+  border-radius: 6px;
+}
+
+/* scrollbar style */
+.top-scrollbar::-webkit-scrollbar{
+  height: 5px;
+}
+.top-scrollbar::-webkit-scrollbar-thumb{
+  background: #e11d48;
+  border-radius: 10px;
+}
+
+
+
+.tools{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;   /* center page */
+}
+
+
+.tool{
+  display:block;
+  padding:20px;
+  border-radius:12px;
+  background:#ffffff;
+  text-decoration:none;
+  color:#222;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  transition:all 0.3s ease;
+}
+
+.tool:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  background:#f4f7ff;
+}
+
+.tool h3{
+  margin-bottom:8px;
+}
+
+.badge{
+  background:#ff5252;
+  color:#fff;
+  font-size:12px;
+  padding:3px 8px;
+  border-radius:6px;
+}
+
+.tool-icon{
+  width:48px;
+  margin-bottom:10px;
+}
+
+
+.container{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+h1 {
+    margin-bottom: 20px;
+}
+input {
+    margin-bottom: 15px;
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <!-- MOBILE MENU BUTTON -->
+  <div class="hamburger" onclick="openSidebar()">☰</div>
+
+
+  <div class="logo text-end">BCA-HUB</div>
+
+  <!-- DESKTOP MENU -->
+  <nav class="menu desktop-menu">
+    <div class="menu-item">
+      <span class="title">c language <span class="arrow">▼</span></span>
+      <div class="sub">
+        <a href="#">c array</a>
+        <a href="#">c pointer</a>
+        <a href="#">c function</a>
+
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <span class="title">Split PDF <span class="arrow">▼</span></span>
+      <div class="sub">
+        <a href="#">Split pages</a>
+        <a href="#">Extract pages</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <span class="title">Compress PDF <span class="arrow">▼</span></span>
+      <div class="sub">
+        <a href="#">High compression</a>
+        <a href="#">Low compression</a>
+      </div>
+    </div>
+  </nav>
+
+ 
+</header>
+
+<!-- MOBILE SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span>Menu</span>
+    <span class="close" onclick="closeSidebar()">✖</span>
+  </div>
+
+  <div class="side-item" onclick="toggleSide(this)">
+    Merge PDF <span>▶</span>
+    <div class="side-sub">
+      <a href="#">Merge 2 PDFs</a>
+      <a href="#">Merge Multiple PDFs</a>
+    </div>
+  </div>
+
+  <div class="side-item" onclick="toggleSide(this)">
+    Split PDF <span>▶</span>
+    <div class="side-sub">
+      <a href="#">Split pages</a>
+      <a href="#">Extract pages</a>
+    </div>
+  </div>
+
+  <div class="side-item" onclick="toggleSide(this)">
+    Compress PDF <span>▶</span>
+    <div class="side-sub">
+      <a href="#">High compression</a>
+      <a href="#">Low compression</a>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+
+<!-- TOP HORIZONTAL SCROLL BAR -->
+<div class="top-scrollbar">
+  <a href="index.html">HOME</a>
+  <a href="#">HTML</a>
+  <a href="#">CSS</a>
+  <a href="#">JavaScript</a>
+  <a href="c.html">C</a>
+  <a href="#">C++</a>
+  <a href="#">Java</a>
+  <a href="https://amanovar.github.io/ffff/">DBMS</a>
+  <a href="#">OS</a>
+  <a href="#">CN</a>
+  <a href="#">Maths</a>
+</div>
+
+
+
+<section class="hero">
+  <h1>Every tool you need to work with PDFs in one place</h1>
+  <p>Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</p>
+</section>
+
+
+<div class="container">
+    <h1>PDF Merge Tool</h1>
+    <input type="file" id="pdfFiles" multiple accept="application/pdf">
+    <button onclick="mergePDFs()">Merge PDF</button>
+    <p id="status"></p>
+</div>
+
+<!-- PDF LIBRARY -->
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script>
+  const { PDFDocument } = PDFLib;
+
+async function mergePDFs() {
+    const files = document.getElementById('pdfFiles').files;
+    const status = document.getElementById('status');
+
+    if (files.length < 2) {
+        alert("Please select at least 2 PDF files");
+        return;
+    }
+
+    const mergedPdf = await PDFDocument.create();
+
+    for (let file of files) {
+        const arrayBuffer = await file.arrayBuffer();
+        const pdf = await PDFDocument.load(arrayBuffer);
+        const pages = await mergedPdf.copyPages(pdf, pdf.getPageIndices());
+        pages.forEach(page => mergedPdf.addPage(page));
+    }
+
+    const mergedPdfBytes = await mergedPdf.save();
+    downloadPDF(mergedPdfBytes);
+    status.innerText = "PDF merged successfully!";
+}
+
+function downloadPDF(bytes) {
+    const blob = new Blob([bytes], { type: "application/pdf" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "merged.pdf";
+    link.click();
+}
+
+</script>
+
+
+
+
+ <!--<h1 class="hool text-center">tool site</h1>
+<section class="tools">
+ 
+  <a href="merge-pdf.html" class="tool">
+  <img src="image.png" class="tool-icon">
+
+    <h3>Merge PDF</h3>
+   
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+ 
+
+</section>
+
+<h1 class="kool text-center">tool site  2</h1>
+<section class="tools">
+ 
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+  </section>
+
+  <h1 class="kool text-center">tool site  3</h1>
+<section class="tools">
+ 
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+  </section>
+
+
+  <h1 class="kool text-center">tool site  4</h1>
+<section class="tools">
+ 
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+  </section>
+
+  <h1 class="kool text-center">tool site  5</h1>
+<section class="tools">
+ 
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+
+  <a href="merge-pdf.html" class="tool">
+    <h3>Merge PDF</h3>
+    <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+  </a>
+
+  <a href="split-pdf.html" class="tool">
+    <h3>Split PDF</h3>
+    <p>Separate one page or a whole set into independent PDF files.</p>
+  </a>
+
+  <a href="compress-pdf.html" class="tool">
+    <h3>Compress PDF</h3>
+    <p>Reduce file size while optimizing for maximal PDF quality.</p>
+  </a>
+
+  <a href="pdf-to-word.html" class="tool">
+    <h3>PDF to Word</h3>
+    <p>Convert PDF files into editable Word documents.</p>
+  </a>
+  </section>-->
+
+
+<section class="section">
+  <div>
+    <h2>Work your way</h2>
+    <p>Work offline with Desktop, manage documents locally, no internet and no limits.</p>
+  </div>
+  <img src="https://dummyimage.com/600x400/e5e7eb/000000&text=Desktop+App" alt="">
+</section>
+
+<section class="premium">
+  <h2>Get more with Premium</h2>
+  <p>Get full access to iLovePDF, advanced OCR, secure e-Signatures and custom workflows.</p>
+  <a href="#">Get Premium</a>
+</section>
+
+<footer>
+  <div class="footer">
+    <div><h4>Product</h4><a href="#">Home</a><a href="#">Features</a><a href="#">Pricing</a></div>
+    <div><h4>Company</h4><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a></div>
+    <div><h4>Solutions</h4><a href="#">Business</a><a href="#">Education</a><a href="#">Legal</a></div>
+    <div><h4>Apps</h4><a href="#">Desktop</a><a href="#">Mobile</a><a href="#">API</a></div>
+  </div>
+  <div class="copy">© 2025 PDF Tools – Your PDF Editor</div>
+</footer>
+
+
+<script>
+
+
+// ===== MOBILE SIDEBAR =====
+function openSidebar(){
+  document.getElementById("sidebar").classList.add("show");
+  document.getElementById("overlay").classList.add("show");
+}
+
+function closeSidebar(){
+  document.getElementById("sidebar").classList.remove("show");
+  document.getElementById("overlay").classList.remove("show");
+}
+
+function toggleSide(item){
+  const sub = item.querySelector(".side-sub");
+  sub.style.display = sub.style.display === "block" ? "none" : "block";
+}
+
+
+
+// Desktop menu hover open/close
+document.querySelectorAll(".desktop-menu .menu-item").forEach(item => {
+  let timer;
+
+  // Mouse enter → open menu
+  item.addEventListener("mouseenter", () => {
+    clearTimeout(timer);        // agar leave ke timer chal raha ho to cancel
+    item.classList.add("active"); // add active class → show dropdown
+  });
+
+  // Mouse leave → auto close after short delay
+  item.addEventListener("mouseleave", () => {
+    timer = setTimeout(() => {
+      item.classList.remove("active"); // remove active class → hide dropdown
+    }, 200); // 200ms delay for smooth experience
+  });
+});
+
+
+
+//like//
+const buttons = document.querySelectorAll(".categories button");
+const contents = document.querySelectorAll(".category-content");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+
+    // Remove active from all buttons
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // Hide all contents
+    contents.forEach(c => c.classList.remove("active"));
+
+    // Show target content
+    const targetId = btn.getAttribute("data-target");
+    document.getElementById(targetId).classList.add("active");
+  });
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>
